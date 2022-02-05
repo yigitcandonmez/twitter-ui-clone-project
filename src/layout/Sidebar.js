@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SideLink from "../components/SideLink";
 import {
   HomeIcon,
@@ -48,6 +48,12 @@ const sideLinks = [
 ];
 
 const Sidebar = () => {
+  const [active, setActive] = useState("Home");
+
+  const handleMenuItemClick = (name) => {
+    setActive(name);
+  };
+
   return (
     <div className="w-72 bg-secondary flex flex-col justify-between pl-3 pr-3">
       <div className="flex flex-col">
@@ -61,7 +67,15 @@ const Sidebar = () => {
         <nav className="nav">
           <ul>
             {sideLinks.map(({ icon, name }) => {
-              return <SideLink key={name} name={name} Icon={icon} />;
+              return (
+                <SideLink
+                  key={name}
+                  name={name}
+                  Icon={icon}
+                  active={active}
+                  handleMenuItemClick={handleMenuItemClick}
+                />
+              );
             })}
           </ul>
         </nav>
