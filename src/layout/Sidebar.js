@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ProfileBox from "../components/ProfileBox";
 import SideLink from "../components/SideLink";
 import {
   HomeIcon,
@@ -83,7 +84,9 @@ const Sidebar = () => {
           Tweet
         </button>
       </div>
-      <div className="text-white">Alt Taraf</div>
+      <div className="text-white">
+        <ProfileBox />
+      </div>
     </div>
   );
 };
