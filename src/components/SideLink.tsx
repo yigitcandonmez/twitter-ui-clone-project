@@ -2,7 +2,7 @@ import React from "react";
 
 type SideLinkProps = {
   name: string;
-  Icon: any;
+  Icon: React.FC;
   active: string;
   handleMenuItemClick: (name: string) => void;
 };
@@ -12,7 +12,7 @@ const SideLink = ({
   Icon,
   active,
   handleMenuItemClick,
-}: SideLinkProps): JSX.Element => {
+}: SideLinkProps) => {
   const isActive = active === name;
   return (
     <li

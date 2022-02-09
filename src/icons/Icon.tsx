@@ -1,6 +1,12 @@
 import React from "react";
 
-const Svg = ({ children, className }: any) => {
+const Svg = ({
+  children,
+  className,
+}: {
+  children: JSX.Element;
+  className: string;
+}) => {
   return (
     <svg viewBox="0 0 24 24" className={`fill-current ${className}`}>
       {children}
