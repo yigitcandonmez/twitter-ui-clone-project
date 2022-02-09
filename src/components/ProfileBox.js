@@ -8,6 +8,7 @@ const ProfileBox = () => {
           src="https://pbs.twimg.com/profile_images/1262086688790261762/5SzWPJLb_400x400.jpg"
           alt="Profile"
           className="w-11 h-11 rounded-full ml-1"
+          aria-label="profile image"
         />
       </div>
       <div className="ml-3 flex flex-col items-start justify-center">

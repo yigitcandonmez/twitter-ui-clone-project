@@ -8,10 +8,7 @@ const SideLink = ({ name, Icon, active, handleMenuItemClick }) => {
         handleMenuItemClick(name);
       }}
     >
-      <a
-        href={name.toLowerCase()}
-        className="cursor-pointer block pointer-events-none"
-      >
+      <a href={name.toLowerCase()} className="cursor-pointer block ">
         <div className="inline-block">
           <div
             className={`flex hover:bg-opacity-30 hover:bg-zinc-600 hover:rounded-full text-white items-center pl-3 pr-8 py-3 ${
