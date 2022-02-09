@@ -11,7 +11,7 @@ import {
   ProfileIcon,
   MoreIcon,
 } from "../icons/Icon";
-import TwitterLogo from "../images/logo.svg";
+import TwitterLogo from "../images/Logo.svg";
 
 const sideLinks = [
   {
@@ -51,7 +51,7 @@ const sideLinks = [
 const Sidebar = () => {
   const [active, setActive] = useState("Home");
 
-  const handleMenuItemClick = (name) => {
+  const handleMenuItemClick = (name: any) => {
     setActive(name);
   };
 

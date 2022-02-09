@@ -1,6 +1,6 @@
 import React from "react";
 
-const Container = ({ children }) => {
+const Container = ({ children }: any) => {
   return (
     <div className="App min-h-screen max-w-7xl mx-auto flex">{children}</div>
   );
