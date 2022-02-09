@@ -51,7 +51,7 @@ const sideLinks = [
 const Sidebar = () => {
   const [active, setActive] = useState("Home");
 
-  const handleMenuItemClick = (name: any) => {
+  const handleMenuItemClick = (name: string) => {
     setActive(name);
   };
 

@@ -1,6 +1,18 @@
 import React from "react";
 
-const SideLink = ({ name, Icon, active, handleMenuItemClick }: any) => {
+type SideLinkProps = {
+  name: string;
+  Icon: any;
+  active: string;
+  handleMenuItemClick: (name: string) => void;
+};
+
+const SideLink = ({
+  name,
+  Icon,
+  active,
+  handleMenuItemClick,
+}: SideLinkProps): JSX.Element => {
   const isActive = active === name;
   return (
     <li
