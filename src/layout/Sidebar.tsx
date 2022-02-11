@@ -80,7 +80,7 @@ const Sidebar = () => {
             })}
           </ul>
         </nav>
-        <button className="text-white bg-primary shadow-lg rounded-full py-3 px-5 w-11/12 mt-2 hover:bg-blue-400">
+        <button className="text-white bg-primary shadow-lg rounded-full py-3 font-medium w-10/12 mt-2 hover:bg-blue-400">
           Tweet
         </button>
       </div>
