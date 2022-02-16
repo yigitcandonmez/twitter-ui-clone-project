@@ -10,7 +10,7 @@ const pages = [
 const ContentHeader = ({ children, className }: any) => {
   return (
     <div
-      className={`home__header sticky bg-black w-full h-14 flex justify-between items-center px-3 pt-2 ${className}`}
+      className={`home__header sticky bg-black w-full h-14 flex justify-between items-center px-5 pt-2 ${className}`}
     >
       {children}
     </div>
@@ -23,7 +23,7 @@ export const HomeContentHeader = ({ optionalProps }: any) => {
       <div className={`${optionalProps} text-white font-medium text-lg`}>
         {pages[0].name}
       </div>
-      <div>
+      <div className="pr-1">
         <StarIcon />
       </div>
     </ContentHeader>

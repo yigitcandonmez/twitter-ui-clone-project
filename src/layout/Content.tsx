@@ -3,7 +3,7 @@ import Home from "../pages/home/Home";
 
 const Content = () => {
   return (
-    <main className="bg-black flex-1 relative">
+    <main className="bg-black flex-1 relative border-darkGray border-x">
       <Home />
     </main>
   );

@@ -41,7 +41,7 @@ const whoToFollow = [
 
 const Widgets = () => {
   return (
-    <aside className="px-3 text-white" style={{ width: "21.875rem" }}>
+    <aside className="pl-6 text-white" style={{ width: "21.875rem" }}>
       <div className="flex  py-2 px-5 mt-2  rounded-full bg-search bg-opacity-90">
         <SearchIcon />
         <input
